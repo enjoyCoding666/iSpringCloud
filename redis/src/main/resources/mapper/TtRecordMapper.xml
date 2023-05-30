@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.TtRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.TtRecordEntity">
+        <id column="id" property="id" />
+        <result column="handle_user_id" property="handleUserId" />
+        <result column="handle_user_name" property="handleUserName" />
+        <result column="handle_node" property="handleNode" />
+        <result column="handle_note" property="handleNote" />
+        <result column="handle_time" property="handleTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, handle_user_id, handle_user_name, handle_node, handle_note, handle_time
+    </sql>
+
+</mapper>
